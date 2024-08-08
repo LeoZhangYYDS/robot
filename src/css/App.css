@@ -1,0 +1,88 @@
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.controls button {
+  background-color: #0056a6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.controls button:hover {
+  background-color: #004085;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.grid-row {
+  display: flex;
+  gap: 10px;
+}
+
+.grid-cell {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.robot {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  background-color: #ff6f00;
+  border-radius: 5px;
+}
+
+.robot.North::after {
+  content: "↑";
+}
+
+.robot.East::after {
+  content: "→";
+}
+
+.robot.South::after {
+  content: "↓";
+}
+
+.robot.West::after {
+  content: "←";
+}

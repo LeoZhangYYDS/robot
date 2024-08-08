@@ -1,0 +1,46 @@
+/* src/components/Grid.css */
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.grid-cell {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.robot {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
+}
+
+.robot.North::after {
+  content: "↑";
+}
+
+.robot.East::after {
+  content: "→";
+}
+
+.robot.South::after {
+  content: "↓";
+}
+
+.robot.West::after {
+  content: "←";
+}
